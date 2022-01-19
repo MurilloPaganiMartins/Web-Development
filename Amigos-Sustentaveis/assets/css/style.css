@@ -154,7 +154,7 @@ a {
 }
 
 .spacing {
-    height: 6.5rem;
+    height: 4.1rem;
 }
 
 
@@ -441,6 +441,16 @@ footer {
     font-size: 1rem;
 }
 
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 800px) {
     .content-intro, .grid, .grid-download {
         grid-template-columns: 1fr;
@@ -450,7 +460,7 @@ footer {
         display: block;
     }
 
-    .content-intro, 
+    .content-intro,
     .info {
         position: relative;
         display: block;
@@ -460,11 +470,11 @@ footer {
         text-align: center;
     }
 
-    .main-content  h2 {
+    .main-content h2 {
         font-size: 3rem;
     }
 
-    .main-content  h3 {
+    .main-content h3 {
         font-size: 2rem;
     }
 
@@ -472,25 +482,99 @@ footer {
         font-size: 1.5rem;
     }
 
+    .close-menu {
+        display: none;
+    }
     
+    .back-to-top {
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        background: var(--white-color);
+        width: 5rem;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        color: var(--primary-color);
+        transform: rotate(-90deg);
+        border: 0.1rem solid var(--primary-color);
+    }
+    
+    
+    
+    .menu {
+        bottom: 0;
+        text-align: center;
+    }
+    
+    .menu-content, .menu-content ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .menu-content {
+        height: 100vh;
+    }
+    
+    .menu {
+        display: none;
+    }
+    
+    .close-menu-label::after {
+        content: '☰';
+        position: fixed;
+        z-index: 2;
+        top: 2rem;
+        right: 2rem;
+        background: var(--primary-color);
+        color: var(--white-color);
+        font-size: 3rem;
+        line-height: 3rem;
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+    
+    .close-menu:checked~.menu {
+        display: block;
+    }
+    
+    .close-menu:checked~.close-menu-label::after {
+        content: '×';
+    }
+    
+    .menu-spacing {
+        display: none;
+    }
+    
+
+
 }
 
 
 @media (max-width: 1044px) {
     .img-intro {
         display: none;
-        
+
     }
 
-    .logo img{
+    .spacing{
         display: none;
     }
-    
-    .menu p{
+
+    .logo img {
+        display: none;
+    }
+
+    .menu p {
         font-size: 2rem;
     }
 
-    .content-intro{
-        grid-template-columns: 1fr ;
+    .content-intro {
+        grid-template-columns: 1fr;
     }
 }
