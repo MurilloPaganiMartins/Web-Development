@@ -443,14 +443,6 @@ footer {
 
 
 
-
-
-
-
-
-
-
-
 @media (max-width: 800px) {
     .content-intro, .grid, .grid-download {
         grid-template-columns: 1fr;
