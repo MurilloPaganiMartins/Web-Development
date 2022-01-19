@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 6</title>
+    <style>
+
+        body{
+            font-family: sans-serif;
+        }
+
+        label{
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <form action="#" method="get" target="_blank" autocomplete="off">
+
+        <p>Formulário</p>
+        <label>
+            Nome:
+            <p>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+            </p>
+        </label>  
+
+        <p>
+            <label for="dev">Dev?</label>
+            <input type="checkbox" id="dev" name="dev" placeholder="dev" value="sim" checked>
+        </p>
+        
+        <p>
+            Sorvete Favorito: <br>
+            <label for="Flocos">Flocos</label>
+            <input type="radio" id="Sorvete" name="Sorvete" placeholder="Sorvete" value="Flocos"><br>
+            <label for="Chocolate">Chocolate</label>
+            <input type="radio" id="Sorvete" name="Sorvete" placeholder="Sorvete" value="Chocolate"><br>
+            <label for="Morango">Morango</label>
+            <input type="radio" id="Sorvete" name="Sorvete" placeholder="Sorvete" value="Morango"><br>
+            <label for="Baunilha">Baunilha</label>
+            <input type="radio" id="Sorvete" name="Sorvete" placeholder="Sorvete" value="Baunilha"><br>
+        </p>
+
+        <p>
+            <label for="data">Data</label>
+            <input type="color" id="cor" name="cor" value="#FF0000">
+        </p>
+
+        <p>
+            <label for="cor">Cor Favorita:</label>
+            <input type="datetime-local" id="date" name="date" value="2022-01-12T00:00">
+        </p>
+
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="ex.:exemplo@email.com">
+        </p>
+
+        <p>
+            <label for="password">Sua senha:</label>
+            <input type="password" id="password" name="password" placeholder="Digite sua senha">
+        </p>
+
+        <p>
+            <label for="file">File:</label>
+            <input type="file" id="file" name="file" accept=".png,.jpg" multiple>
+        </p>
+
+        <p>
+            <label for="range">O quão gostoso tu é::</label>
+            <input type="range" id="range" name="range" min="0" max="100" step="5">
+        </p>
+
+        <p>
+            <label for="number">number:</label>
+            <input type="number" id="number" name="number" min="0" max="10" step="2">
+        </p>
+
+        <p>
+            <label for="select">Escolha:</label>
+            <select name="select" id="select">
+
+                <option value="1">aaaaa</option>
+                <option value="2">bbbbb</option>
+                <option value="3" selected>ccccc</option>
+
+
+            </select>
+        </p>
+
+        <p>
+            <label for="URL">URL:</label>
+            <input type="url" id="URL" name="URL">
+        </p>
+
+        <p>
+            <label for="textarea">Escreva:</label>
+            <textarea name="textarea" id="textarea" cols="30" rows="10"> Escreve ae mano</textarea>
+        </p>
+
+        <p>
+            <button type="submit">Enviar</button>
+            <button type="reset">Resetar</button>
+        </p>
+  
+    </form>
+    
+</body>
+
+</html>

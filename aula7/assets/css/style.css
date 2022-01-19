@@ -1,0 +1,42 @@
+.caixa{
+    background: red;
+    height: 200px;
+    width: 200px;
+}
+
+.heading{
+    transition: all 1000ms ease-in-out;
+}
+.heading:hover{
+    background: yellow;
+}
+
+a{
+    text-decoration: none;
+
+}
+a:visited{
+    color: purple;
+}
+
+a:link{
+    color: rgb(201, 162, 33);
+    
+}
+
+a:hover{
+    color: rgb(7, 44, 4);
+}
+
+a:active{
+    color: rgb(129, 209, 1);
+}
+input:focus {
+    box-shadow:0 0 5px rgba(0, 0, 0, 0.8);
+    outline: none;
+    border: 1px solid black;
+}
+
+.coisa:checked+p{
+    background: chartreuse;
+}

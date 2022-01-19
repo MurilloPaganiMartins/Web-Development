@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 5</title>
+    <style>
+
+        body{
+            font-family: sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 800px;
+        }
+
+        table td, table th{
+            border: 1px solid #ccc;
+            padding: 5px;
+            text-align: left;
+        }
+
+        table caption{
+            text-align: left;
+            caption-side: top;
+            font-size: 14px;
+            margin-bottom: 5px;
+            font-style: italic;
+        }
+        
+        tfoot td, table th{
+            background: #ddd;
+        }
+
+        .responsive{
+            max-width: 100%;
+            overflow-x: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <p>Lorem, ipsum dolor.</p>
+
+    <div class="responsive">
+        <table>
+            <caption> Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, ab?</caption>
+            <thead>
+                <tr>
+                    <th>Parte 1</th>
+                    <th>Parte 2</th>
+                    <th>Parte 3</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Corpo 1</td>
+                    <td>Corpo 2</td>
+                    <td>Corpo 3</td>
+                </tr>
+                <tr>
+                    <td colspan="2" rowspan="2">AQUI</td>
+                    <td>Corpo 3</td>
+                </tr>
+                <tr>
+                    <td>Corpo 3</td>
+                </tr>
+                <tr>
+                    <td>Corpo 1</td>
+                    <td>Corpo 2</td>
+                    <td>Corpo 3</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="2" rowspan="2"></td>
+                    <td>Total:</td>
+                </tr>
+                <tr>
+                    <td>555 reais</td>
+                </tr>
+            </tfoot>
+
+        </table>
+    </div>
+</body>
+</html>
