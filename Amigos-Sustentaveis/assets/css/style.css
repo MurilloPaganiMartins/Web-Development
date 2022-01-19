@@ -162,11 +162,16 @@ a {
 
 .content-intro {
     position: relative;
-    top: -8rem;
+
     display: grid;
     grid-template-columns: 1fr 1.5fr;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
     gap: var(--gap);
     min-height: 100vh;
+    text-align: center;
+
 
 }
 
@@ -434,4 +439,58 @@ footer {
     text-align: center;
     color: #26ace2;
     font-size: 1rem;
+}
+
+@media (max-width: 800px) {
+    .content-intro, .grid, .grid-download {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-one-content {
+        display: block;
+    }
+
+    .content-intro, 
+    .info {
+        position: relative;
+        display: block;
+        justify-content: center;
+        gap: var(--gap);
+        min-height: 100vh;
+        text-align: center;
+    }
+
+    .main-content  h2 {
+        font-size: 3rem;
+    }
+
+    .main-content  h3 {
+        font-size: 2rem;
+    }
+
+    .main-content p {
+        font-size: 1.5rem;
+    }
+
+    
+}
+
+
+@media (max-width: 1044px) {
+    .img-intro {
+        display: none;
+        
+    }
+
+    .logo img{
+        display: none;
+    }
+    
+    .menu p{
+        font-size: 2rem;
+    }
+
+    .content-intro{
+        grid-template-columns: 1fr ;
+    }
 }
