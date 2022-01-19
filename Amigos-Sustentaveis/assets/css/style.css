@@ -33,13 +33,6 @@ a {
     color: var(--white-color);
 }
 
-/*
-.white-bg {
-    background: var(--white-color);
-    color: var(--primary-color);
-}
-*/
-
 .airplane-bg {
     background-image: url(../img/fundoaviao.svg);
     background-size: cover;
@@ -157,12 +150,8 @@ a {
     height: 4.1rem;
 }
 
-
-
-
 .content-intro {
     position: relative;
-
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     flex-direction: column;
@@ -171,7 +160,6 @@ a {
     gap: var(--gap);
     min-height: 100vh;
     text-align: center;
-
 
 }
 
@@ -198,8 +186,6 @@ a {
     left: 25%;
 }
 
-
-
 .section {
     min-height: 100vh;
 }
@@ -216,7 +202,6 @@ a {
 
 .grid-one-content {
     display: flex;
-
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
@@ -239,28 +224,6 @@ a {
     padding-bottom: 5rem;
 }
 
-/*
-.grid h3 {
-
-    position: relative;
-    padding-left: 5rem;
-    padding-bottom: 2rem;
-}
-
-.grid h3::before {
-    counter-increment: grid-counter;
-    content: counter(grid-counter);
-    position: absolute;
-    font-size: 8rem;
-    font-style: italic;
-    top: -4rem;
-    left: -1rem;
-    transform: rotate(5deg);
-}
-*/
-
-
-
 .team-img {
     width: 100%;
     max-width: 36rem;
@@ -276,41 +239,6 @@ a {
     transform: translate(-3%, 3%) scale(1.2);
 }
 
-
-
-
-h1 h2 h3 h4 h5 h6 {
-    font-family: 'Montserrat', sans-serif;
-
-}
-
-h1 {
-    font-size: 4rem;
-}
-
-h2 {
-    font-size: 5rem;
-    margin-bottom: 5rem;
-    text-transform: uppercase;
-    line-height: 1.2;
-}
-
-h3 {
-    font-size: 3rem;
-}
-
-h4 {
-    font-size: 2.5rem;
-}
-
-h5 {
-    font-size: 2rem;
-}
-
-h6 {
-    font-size: 1, 5rem;
-}
-
 .grid-team {
     display: flex;
     flex-wrap: wrap;
@@ -318,8 +246,6 @@ h6 {
     margin-top: 40px;
 
 }
-
-
 
 .sphere {
     flex: 0 0 calc(16.66% - 20px);
@@ -424,8 +350,6 @@ h6 {
     text-align: center;
     margin-right: 1.8rem;
 
-
-
 }
 
 .grid-download a:hover {
@@ -441,6 +365,38 @@ footer {
     font-size: 1rem;
 }
 
+
+h1 h2 h3 h4 h5 h6 {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 5rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2.5rem;
+}
+
+h5 {
+    font-size: 2rem;
+}
+
+h6 {
+    font-size: 1, 5rem;
+}
 
 
 @media (max-width: 800px) {
@@ -477,7 +433,7 @@ footer {
     .close-menu {
         display: none;
     }
-    
+
     .back-to-top {
         position: fixed;
         bottom: 2rem;
@@ -493,27 +449,27 @@ footer {
         transform: rotate(-90deg);
         border: 0.1rem solid var(--primary-color);
     }
-    
-    
-    
+
+
+
     .menu {
         bottom: 0;
         text-align: center;
     }
-    
+
     .menu-content, .menu-content ul {
         flex-direction: column;
         justify-content: center;
     }
-    
+
     .menu-content {
         height: 100vh;
     }
-    
+
     .menu {
         display: none;
     }
-    
+
     .close-menu-label::after {
         content: '☰';
         position: fixed;
@@ -530,19 +486,19 @@ footer {
         padding: 0.5rem;
         cursor: pointer;
     }
-    
+
     .close-menu:checked~.menu {
         display: block;
     }
-    
+
     .close-menu:checked~.close-menu-label::after {
         content: '×';
     }
-    
+
     .menu-spacing {
         display: none;
     }
-    
+
 
 
 }
@@ -554,7 +510,7 @@ footer {
 
     }
 
-    .spacing{
+    .spacing {
         display: none;
     }
 
