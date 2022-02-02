@@ -164,7 +164,7 @@ a {
 }
 
 .text-intro, .img-intro {
-    margin-top: 2rem;
+    margin-top: 1rem;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
