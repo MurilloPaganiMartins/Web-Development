@@ -32,8 +32,8 @@ class App extends React.Component {
 
   render() {
     const { isLogginActive } = this.state;
-    const current = isLogginActive ? "Register" : "Login";
-    const currentActive = isLogginActive ? "login" : "register";
+    const current = isLogginActive ? "Cadastrar" : "Entrar";
+    const currentActive = isLogginActive ? "Entrar" : "Cadastrar";
     return (
       <div className="App">
         <div className="login">
@@ -56,7 +56,6 @@ class App extends React.Component {
     );
   }
 }
-
 const RightSide = (props) => {
   return (
     <div
