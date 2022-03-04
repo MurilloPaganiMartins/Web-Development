@@ -31,7 +31,6 @@ export class Login extends React.Component {
             Entrar
           </button>
         </div>
-        <label className="orButton">ou</label>
       </div>
     );
   }

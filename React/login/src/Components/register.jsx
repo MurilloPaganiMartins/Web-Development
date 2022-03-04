@@ -35,7 +35,6 @@ export class Register extends React.Component {
             Cadastrar
           </button>
         </div>
-        <label className="orButton">ou</label>
       </div>
     );
   }

@@ -150,6 +150,10 @@ a {
     height: 4.1rem;
 }
 
+.spacing-2 {
+    height: 1.8rem;
+}
+
 .content-intro {
     position: relative;
     display: grid;
@@ -416,6 +420,10 @@ h6 {
         gap: var(--gap);
         min-height: 100vh;
         text-align: center;
+    }
+
+    .info:target {
+        padding-top: 80px;
     }
 
     .main-content h2 {
