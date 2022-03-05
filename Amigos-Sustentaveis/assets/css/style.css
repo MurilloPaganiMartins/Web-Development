@@ -121,8 +121,8 @@ a {
     font-family: 'Montserrat', sans-serif;
     display: block;
     color: var(--primary-color);
-    padding: 2rem;
-    font-size: 1.8rem;
+    padding: 1.3rem;
+    font-size: 1.6rem;
     position: relative;
 }
 
@@ -226,6 +226,48 @@ a {
 
 .grid-description {
     padding-bottom: 5rem;
+}
+
+
+.content-edu {
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: var(--gap);
+    min-height: 100vh;
+    text-align: left;
+
+}
+
+.text-edu, .img-edu {
+    margin-top: 1rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    height: 100vh;
+}
+
+.text-edu h2 {
+    font-size: 4rem;
+}
+
+.text-edu p {
+    font-size: 1.5rem;
+
+}
+
+#specialblue {
+    color: #0d82b1;
+}
+
+
+.img-edu img,
+.img-edu svg {
+    max-width: 100%;
+    height: auto;
 }
 
 .team-img {
